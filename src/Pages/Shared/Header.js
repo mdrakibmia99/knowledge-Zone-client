@@ -113,6 +113,7 @@ const Header = () => {
   );
   return (
     <div className="bg-violet-900 sticky top-0 z-50">
+      {/* Header start  */}
       <div className="md:flex flex-row justify-between items-center py-2 px-20 hidden ">
         <div className="flex flex-row items-center">
           <img src={logo} alt="" className="w-[40px] h-[50px]" />
@@ -122,21 +123,29 @@ const Header = () => {
         <div>
           <div className="form-control">
             <label className="input-group input-group-sm">
+              {/* search box  start*/}
               <input
                 type="search"
                 name="text"
                 placeholder="Search Courses"
                 className="input input-bordered input-sm"
               />
+              {/* search box  End*/}
+              
+              {/* search icon start*/}
               <span className="bg-violet-300">
                 <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
               </span>
+              {/* search icon end*/}
             </label>
           </div>
         </div>
       </div>
 
       <div>
+        {/* header end  */}
+
+        {/* Nav Bar start */}
         <nav className="">
           <div className="md:hidden flex flex-row items-center justify-between px-4 py-2">
             <div className="flex flex-row items-center">
@@ -160,6 +169,7 @@ const Header = () => {
             {menuItems}
           </ul>
         </nav>
+         {/* Nav Bar End */}
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ const SendMessage = () => {
         </h1>
         <div className="form-control">
           <div className="grid grid-cols-2 gap-4">
+            {/* first name input  */}
             <input
               type="text"
               placeholder="First Name"
@@ -21,6 +22,7 @@ const SendMessage = () => {
               className="input input-bordered input-violet-800"
               required
             />
+            {/* last name input  */}
             <input
               type="text"
               placeholder="Last Name"
@@ -30,6 +32,7 @@ const SendMessage = () => {
           </div>
         </div>
 
+     {/* subject input  */}
         <div className="form-control">
           <input
             type="text"
@@ -40,6 +43,7 @@ const SendMessage = () => {
           />
         </div>
         <div className="form-control">
+          {/* text input  */}
           <textarea
             className="textarea textarea-violet-800 pb-16 resize-none"
             placeholder="Write your message here"
