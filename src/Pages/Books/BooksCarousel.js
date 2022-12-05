@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
-import { useNavigate } from "react-router-dom";
+
 
 const BooksCarousel = () => {
   const [books, setBooks] = useState([]);
-  const navigate = useNavigate();
-  const handleBook = (id) => {
-    navigate(`/book/${id}`);
-  };
   useEffect(() => {
-    fetch(`https://backend-nipa-akter.onrender.com/books`)
+    fetch(`https://knowledge-zone-2022.onrender.com/books`)
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);

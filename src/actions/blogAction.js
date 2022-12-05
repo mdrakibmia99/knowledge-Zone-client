@@ -8,7 +8,7 @@ import axios from "axios";
 export const getBlogs = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_BLOG_REQUEST });
-    let link = `https://backend-nipa-akter.onrender.com/blogs`;
+    let link = `https://knowledge-zone-2022.onrender.com/blogs`;
     console.log(link);
     const { data } = await axios.get(link);
 

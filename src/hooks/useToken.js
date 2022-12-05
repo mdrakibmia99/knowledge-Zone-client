@@ -6,7 +6,7 @@ const useToken = (user) => {
     const email = user?.user?.email;
     const currentUser = { email: email };
     if (email) {
-      fetch(`https://backend-nipa-akter.onrender.com/user/${email}`, {
+      fetch(`https://knowledge-zone-2022.onrender.com/user/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

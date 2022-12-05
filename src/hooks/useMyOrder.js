@@ -12,7 +12,7 @@ const useMyOrder = (props) => {
   const email = user?.email;
   useEffect(() => {
     const getMyOrder = async () => {
-      const url = `https://backend-nipa-akter.onrender.com/${props}?email=${email}`;
+      const url = `https://knowledge-zone-2022.onrender.com/${props}?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setMyOrder(data);
