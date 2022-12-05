@@ -1,0 +1,98 @@
+
+  .contact{
+    background-image: url('../src/img/assets/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(58, 15, 88);
+    background-blend-mode: overlay;
+  }
+
+
+  /* loading start */
+.loading-section {
+  display: grid;
+  justify-items: center;
+  /* margin-top: 10vh; */
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  grid-area: 1/1;
+}
+
+.violet {
+  background-color: #a476d5;
+  animation: move-right 2s linear infinite
+}
+
+.purple {
+  background-color: #a476d5;
+  animation: move-left 2s linear infinite
+}
+.purple2 {
+  background-color: #6614b3;
+  animation: move-middle 2s linear infinite
+}
+
+@keyframes move-right {
+
+  0%,
+  100% {
+    margin-right: 0
+  }
+
+  25% {
+    margin-right: 250px;
+
+  }
+
+  50% {
+    z-index: 2
+  }
+
+  75% {
+    margin-right: -250px;
+  }
+}
+
+@keyframes move-left {
+
+  0%,
+  100% {
+    margin-left: 0
+  }
+
+  25% {
+    margin-left: 250px;
+  }
+
+  75% {
+    margin-left: -250px;
+  }
+}
+@keyframes move-middle {
+
+  0%,
+  100% {
+    move-middle: 0
+  }
+
+  25% {
+    move-middle: 250px;
+  }
+
+  75% {
+    move-middle: -250px;
+  }
+}
+
+  /* loading end */

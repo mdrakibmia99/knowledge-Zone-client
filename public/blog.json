@@ -1,0 +1,57 @@
+[
+  {
+    "title": "common broblem",
+    "userName": "Human book",
+    "writer": "Gustave Flaubert",
+    "page": 500,
+    "img": "https://i.ibb.co/Ld3FZdb/19908282-6186825.jpg",
+    "description": "We, human beings, are a species that’s not only capable of acting on hidden motives—we’re designed to do it. Our brains are built to act in our self-interest while at the same time trying hard not to appear selfish in front of other people",
+    "promocode": "bk5283",
+    "price": 2589,
+    "buy": 25
+  },
+  {
+    "title": "common broblem2",
+    "userName": "The Beginning of Infinity",
+    "writer": "Jane Austen",
+    "page": 100,
+    "img": "https://i.ibb.co/kmgBRYx/ahmed-almakhzanji-kshk-B1i5-5o-unsplash.jpg",
+    "description": "The core premise of “The Beginning of Infinity” is that all problems are soluble given enough knowledge, assuming they don’t violate the laws of physics. It’s an optimistic look at how our future might unfold through technology and science, and how we will always be at the beginning of an infinity of future knowledge and development.",
+    "promocode": "bk5283",
+    "price": 2589,
+    "buy": 25
+  },
+  {
+    "title": "common broblem3",
+    "userName": "Paslms",
+    "writer": "Stendhal",
+    "page": 250,
+    "img": "https://i.ibb.co/SXY2VhN/alabaster-co-ERDtf2-D6x-PY-unsplash.jpg",
+    "description": "After reading this book, you should know a lot. So use it! Use it to improve cash flow. Use it to analyze the next big project. Use it to assess your company’s results. Your job will be more fun, and your impact on the company’s performance will be greater.",
+    "promocode": "bk5283",
+    "price": 2589,
+    "buy": 25
+  },
+  {
+    "title": "common broblem4",
+    "userName": "Kinflok",
+    "writer": "Honoré de Balzac",
+    "page": 158,
+    "img": "https://i.ibb.co/CB6wfd7/frosty-ilze-tf-YL1j1j-KNo-unsplash.jpg",
+    "description": "One part that was particularly useful for me was how to think about cash flow, and restructuring your payment schedules to allow for better cash flow for the business and not need to raise money or take out loans. Great for service-based and ecommerce businesses.",
+    "promocode": "bk5283",
+    "price": 2589,
+    "buy": 25
+  },
+  {
+    "title": "common broblem5",
+    "userName": "Hope",
+    "writer": "Charles Dickens",
+    "page": 428,
+    "img": "https://i.ibb.co/8drPPVs/jon-tyson-p-Fnvc1-Cu6z-I-unsplash.jpg",
+    "description": "There’s something refreshing about Peterson’s take on self-help. It feels like a mix of Jocko Willink and Joseph Campbell, low-bullshit tough love with a religious mythology spin on it. I’d recommend this over most self-help books, since he doesn’t waste time with questionable psych studies, but focuses on advice that makes sense intuitively while being actionable and memorable.",
+    "promocode": "bk5283",
+    "price": 2589,
+    "buy": 25
+  }
+]
