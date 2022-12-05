@@ -5,7 +5,7 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <div className="bg-violet-900 text-white py-12">
+    <div className="bg-violet-900 text-white py-12 mt-5">
       <div className="w-4/5 mx-auto lg:flex lg:justify-between sm:grid sm:grid-cols-1 items-center">
         <div className="flex flex-col md:flex-row gap-6">
           <a href="https://play.google.com/">
