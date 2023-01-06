@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
-
+import { useNavigate } from "react-router-dom";
 
 const BooksCarousel = () => {
   const [books, setBooks] = useState([]);
+  const navigate = useNavigate();
+  const handleBook = (id) => {
+    navigate(`/book/${id}`);
+  };
   useEffect(() => {
-    fetch(`https://knowledge-zone-2022.onrender.com/books`)
+    fetch(`http://localhost:5000/books`)
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);
@@ -55,6 +59,7 @@ const BooksCarousel = () => {
                   data-aos-duration="1000"
                 >
                   <div
+                    onClick={() => handleBook(book._id)}
                     className="cursor-pointer flex justify-center"
                   >
                     <img className="rounded-lg" src={book.img} alt="" />

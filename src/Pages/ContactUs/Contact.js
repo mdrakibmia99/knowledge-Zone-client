@@ -1,5 +1,7 @@
 import React from "react";
 import ContactInfo from "./ContactInfo";
+import LiveChat from "./LiveChat";
+import MapLocation from "./MapLocation";
 import SendMessage from "./SendMessage";
 import email from "../../img/assets/output-onlinegiftools.gif";
 
@@ -25,6 +27,8 @@ const Contact = () => {
           />
           <SendMessage />
         </div>
+        <MapLocation />
+        <LiveChat />
       </div>
     </div>
   );

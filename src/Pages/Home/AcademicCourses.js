@@ -122,7 +122,6 @@ const AcademicCourses = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          {/* academic course use loop  */}
           {academicCourses.map((courses, index) => (
             <div
               data-aos-delay="200"
