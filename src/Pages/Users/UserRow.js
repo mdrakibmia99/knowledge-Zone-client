@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const UserRow = ({ user, index }) => {
   const { _id, email, role } = user;
   const makeAdmin = () => {
-    fetch(`http://localhost:5000/user/admin/${email}`, {
+    fetch(`https://knowledge-zone-2022.onrender.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -36,7 +36,7 @@ const UserRow = ({ user, index }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
-        const url = `http://localhost:5000/user/${id}`;
+        const url = `https://knowledge-zone-2022.onrender.com/user/${id}`;
         fetch(url, {
           method: "DELETE",
         })

@@ -6,7 +6,7 @@ const English = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/English")
+    fetch("https://knowledge-zone-2022.onrender.com/instructors/English")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

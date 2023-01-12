@@ -36,7 +36,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
         phone,
       };
 
-      fetch(`http://localhost:5000/users/${email}`, {
+      fetch(`https://knowledge-zone-2022.onrender.com/users/${email}`, {
         method: "put",
         headers: {
           "content-type": "application/json",

@@ -6,7 +6,7 @@ const Biology = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/Biology")
+    fetch("https://knowledge-zone-2022.onrender.com/instructors/Biology")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

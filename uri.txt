@@ -1,1 +1,1 @@
-server uri: http://localhost:5000/
+server uri: https://knowledge-zone-2022.onrender.com/

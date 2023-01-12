@@ -6,7 +6,7 @@ const IslamicCourse = () => {
   const [islamicCourse, setIslamicCourse] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/islamicCourse")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/islamicCourse")
       .then((res) => res.json())
       .then((data) => {
         setIslamicCourse(data);

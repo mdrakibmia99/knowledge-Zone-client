@@ -15,7 +15,7 @@ const stripePromise = loadStripe(
 const Payment = () => {
   const [user] = useAuthState(auth);
   const { id } = useParams();
-  const url = `http://localhost:5000/payment/${id}`;
+  const url = `https://knowledge-zone-2022.onrender.com/payment/${id}`;
   const { data: course, isLoading } = useQuery(["payment", id], () =>
     fetch(url, {
       method: "GET",

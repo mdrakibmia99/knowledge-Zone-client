@@ -87,7 +87,7 @@ const AddCourse = () => {
       transcripts: 10,
     };
 
-    axios.post(`http://localhost:5000/addCourse`, addCourse).then((res) => {
+    axios.post(`https://knowledge-zone-2022.onrender.com/addCourse`, addCourse).then((res) => {
       toast.success(`Add a Course for ${classCourse}`);
       event.target.reset();
     });

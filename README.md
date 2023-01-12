@@ -1,8 +1,5 @@
 ### The name of Our project is "Knowledge Zone". It's an EdTech based website.
-
-## Here is the Live Link:  [Knowledge Zone](https://knowledge-zone-c97ee.web.app).
-
-## Server Site:  [Code Link](https://github.com/BloomingGang/knowledge-zone-server). 
+## Server Site:  [Live link](https://knowledge-zone-2022.onrender.com/). 
 
 ### Project Main Features
 

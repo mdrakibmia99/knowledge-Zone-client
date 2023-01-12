@@ -28,7 +28,7 @@ const InstructorCard = ({ instructor, index }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
-        const url = `http://localhost:5000/instructor/${id}`;
+        const url = `https://knowledge-zone-2022.onrender.com/instructor/${id}`;
         fetch(url, {
           method: "DELETE",
         })

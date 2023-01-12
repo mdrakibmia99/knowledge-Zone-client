@@ -6,7 +6,7 @@ const Religious = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/Religion")
+    fetch("https://knowledge-zone-2022.onrender.com/instructors/Religion")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

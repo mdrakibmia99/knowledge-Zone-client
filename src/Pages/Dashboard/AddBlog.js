@@ -19,7 +19,7 @@ const AddBlog = () => {
       description: description,
     };
 
-    axios.post(`http://localhost:5000/addBlog`, addBlog).then((res) => {
+    axios.post(`https://knowledge-zone-2022.onrender.com/addBlog`, addBlog).then((res) => {
       toast.success(`Add a Blog`);
       event.target.reset();
     });

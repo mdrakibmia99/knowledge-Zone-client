@@ -6,7 +6,7 @@ const LiveCourse = () => {
   const [liveCourse, setLiveCourse] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/liveCourse")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/liveCourse")
       .then((res) => res.json())
       .then((data) => {
         setLiveCourse(data);

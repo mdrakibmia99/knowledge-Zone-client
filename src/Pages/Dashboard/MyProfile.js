@@ -13,7 +13,7 @@ const MyProfile = () => {
   const email = user?.email;
   const photoUrl = user?.photoURL;
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${email}`)
+    fetch(`https://knowledge-zone-2022.onrender.com/user/${email}`)
       .then((res) => res.json())
       .then((data) => setProfile(data));
   }, [email, profile, photoUrl]);

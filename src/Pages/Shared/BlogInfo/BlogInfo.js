@@ -7,7 +7,7 @@ const BlogInfo = () => {
   const [blog, setBlog] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/blog/${id}`)
+      .get(`https://knowledge-zone-2022.onrender.com/blog/${id}`)
       .then((data) => setBlog(data.data));
   }, [id]);
   const { description, writerName, img, date, title } = blog;

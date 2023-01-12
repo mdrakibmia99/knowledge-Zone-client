@@ -42,7 +42,7 @@ const BookInfo = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/book/${id}`)
+      .get(`https://knowledge-zone-2022.onrender.com/book/${id}`)
       .then((res) => setBookInfo(res.data));
     myOrder?.find((paid) => {
       if (paid.id == _id) return setMatchPaid(true);
@@ -55,7 +55,7 @@ const BookInfo = () => {
   //   error,
   //   data: book,
   // } = useQuery(["book", id], () =>
-  //   fetch(`http://localhost:5000/book/${id}`, {
+  //   fetch(`https://knowledge-zone-2022.onrender.com/book/${id}`, {
   //     method: "get",
   //     headers: {
   //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -79,7 +79,7 @@ const BookInfo = () => {
       paid: false,
       id: _id,
     };
-    fetch("http://localhost:5000/order", {
+    fetch("https://knowledge-zone-2022.onrender.com/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

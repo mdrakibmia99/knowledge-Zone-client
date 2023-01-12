@@ -39,7 +39,7 @@ const AddInstructor = () => {
     };
 
     axios
-      .post(`http://localhost:5000/addInstructor`, addInstructor)
+      .post(`https://knowledge-zone-2022.onrender.com/addInstructor`, addInstructor)
       .then((res) => {
         toast.success(`Instructor added successfully!!`);
         event.target.reset();

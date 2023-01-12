@@ -58,7 +58,7 @@ const AddBook = () => {
       price: price,
     };
 
-    axios.post(`http://localhost:5000/addBook`, addBook).then((res) => {
+    axios.post(`https://knowledge-zone-2022.onrender.com/addBook`, addBook).then((res) => {
       toast.success(`Add a Book`);
       event.target.reset();
     });

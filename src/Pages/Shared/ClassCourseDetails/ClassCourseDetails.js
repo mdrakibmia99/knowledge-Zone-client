@@ -35,7 +35,7 @@ const ClassCourseDetails = () => {
   } = courseInfo;
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/course/${id}`)
+      .get(`https://knowledge-zone-2022.onrender.com/course/${id}`)
       .then((res) => setCourseInfo(res.data));
 
     myOrder?.find((paid) => {
@@ -63,7 +63,7 @@ const ClassCourseDetails = () => {
       id: _id,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://knowledge-zone-2022.onrender.com/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

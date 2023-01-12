@@ -20,21 +20,21 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("http://localhost:5000/ccis").then((res) => res.json())
+    fetch("https://knowledge-zone-2022.onrender.com/ccis").then((res) => res.json())
   );
 
   // bookN= book notification
   const { data: bookN } = useQuery(["bookN"], () =>
-    fetch("http://localhost:5000/bookN").then((res) => res.json())
+    fetch("https://knowledge-zone-2022.onrender.com/bookN").then((res) => res.json())
   );
 
   const handleUnreadState = async (id) => {
-    const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
+    const { data } = await axios.put(`https://knowledge-zone-2022.onrender.com/cci/${id}`);
     refetch();
   };
 
   const handleUnreadStateBookN = async (id) => {
-    const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
+    const { data } = await axios.put(`https://knowledge-zone-2022.onrender.com/bookN/${id}`);
     refetch();
   };
 
@@ -183,14 +183,14 @@ const Header = () => {
           Books
         </NavLink>
       </li>
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+      {/* <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/instructor"
         >
           Instructor
         </NavLink>
-      </li>
+      </li> */}
       {/* <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) => (isActive ? "text-white" : "text-black")}

@@ -16,7 +16,7 @@ const CheckoutForm = ({ course }) => {
   const { displayName, email } = user;
 
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
+    fetch("https://knowledge-zone-2022.onrender.com/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const CheckoutForm = ({ course }) => {
         transactionId: paymentIntent.id,
       };
 
-      fetch(`http://localhost:5000/enrollCourse/${_id}`, {
+      fetch(`https://knowledge-zone-2022.onrender.com/enrollCourse/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

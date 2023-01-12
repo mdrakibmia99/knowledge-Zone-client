@@ -26,7 +26,7 @@ const Book = ({ book }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your book has been deleted.", "success");
-        const url = `http://localhost:5000/bookDelete/${id}`;
+        const url = `https://knowledge-zone-2022.onrender.com/bookDelete/${id}`;
         fetch(url, {
           method: "DELETE",
         })

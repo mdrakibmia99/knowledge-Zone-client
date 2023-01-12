@@ -6,7 +6,7 @@ const EntertainingCourse = () => {
   const [entertainCourse, setEntertainCourse] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/entertainCourse")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/entertainCourse")
       .then((res) => res.json())
       .then((data) => {
         setEntertainCourse(data);

@@ -9,7 +9,7 @@ const BooksCarousel = () => {
     navigate(`/book/${id}`);
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/books`)
+    fetch(`https://knowledge-zone-2022.onrender.com/books`)
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);

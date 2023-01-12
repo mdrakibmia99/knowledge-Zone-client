@@ -18,7 +18,7 @@ const AddReviwe = () => {
     setRattingError("");
     const review = { name, comment, ratting, image };
 
-    fetch("http://localhost:5000/addreview", {
+    fetch("https://knowledge-zone-2022.onrender.com/addreview", {
       method: "POST",
       headers: {
         "content-type": "application/json",

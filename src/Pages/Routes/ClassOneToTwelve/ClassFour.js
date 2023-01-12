@@ -6,7 +6,7 @@ const ClassFour = () => {
   const [classFour, setClassFour] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/classFour")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/classFour")
       .then((res) => res.json())
       .then((data) => {
         setClassFour(data);

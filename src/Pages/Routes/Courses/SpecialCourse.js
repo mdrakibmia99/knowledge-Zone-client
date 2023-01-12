@@ -7,7 +7,7 @@ const SpecialCourse = () => {
   const [specialCourse, setSpecialCourse] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/specialCourse")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/specialCourse")
       .then((res) => res.json())
       .then((data) => {
         setSpecialCourse(data);

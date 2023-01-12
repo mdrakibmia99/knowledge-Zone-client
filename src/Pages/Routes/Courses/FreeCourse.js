@@ -6,7 +6,7 @@ const FreeCourse = () => {
   const [freeCourses, setFreeCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/freeCourse")
+    fetch("https://knowledge-zone-2022.onrender.com/courses/freeCourse")
       .then((res) => res.json())
       .then((data) => {
         setFreeCourses(data);
